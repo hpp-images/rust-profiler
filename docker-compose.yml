@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  profiler:
+    build: .
+    image: hpprc/rust-profiler
+    # tty: true
+    volumes:
+      - .:/work
+    working_dir: /work
